@@ -18,7 +18,7 @@ except (IOError, ImportError):
     readme = ''
 
 
-package = 'tapioca_amarilisv1'
+package = 'tapioca_amarilis'
 requirements = [
     'tapioca-wrapper<2',
 ]
@@ -65,22 +65,20 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='tapioca-amarilisv1',
+    name='tapioca-amarilis',
     version=get_version(package),
-    description='Amarilisv1 API wrapper using tapioca',
+    description='Amarilis API wrapper using tapioca',
     long_description=readme,
     author=get_author(package),
     author_email=get_email(package),
-    url='https://github.com/daniellbastos/tapioca-amarilisv1',
+    url='https://github.com/daniellbastos/tapioca-amarilis',
     packages=[
-        'tapioca_amarilisv1',
+        'tapioca_amarilis',
     ],
-    package_dir={'tapioca_amarilisv1': 'tapioca_amarilisv1'},
+    package_dir={'tapioca_amarilis': 'tapioca_amarilis'},
     include_package_data=True,
     install_requires=requirements,
-    license="MIT",
-    zip_safe=False,
-    keywords='amarilisv1',
+    keywords='amarilis',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',

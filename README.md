@@ -1,17 +1,17 @@
-# Tapioca amarilisv1
+# Tapioca Amarilis
 
 ## Installation
 ```
-pip install tapioca-amarilisv1
+pip install tapioca-amarilis
 ```
 
 ## Documentation
 ``` python
-from tapioca_amarilisv1 import AmarilisV1
+from tapioca_amarilis import AmarilisV1
 
 
 api = AmarilisV1(
-	user='{your-user}', password='{your-password}')
+	user='{your-user}', password='{your-password}'[, debug=True][, api_root='http://local.com/'])
 
 ```
 

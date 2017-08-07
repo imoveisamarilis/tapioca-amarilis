@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from tapioca_amarilisv1 import AmarilisV1
+from tapioca_amarilis import AmarilisV1
 
 
 class TestTapiocaAmarilisV1(unittest.TestCase):
