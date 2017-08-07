@@ -29,7 +29,7 @@ test_requirements = [
 
 setup(
     name='tapioca-amarilis',
-    version='0.0.0',
+    version='0.1.0',
     description='Amarilis API wrapper using tapioca',
     long_description=readme,
     author='Daniel Bastos',
