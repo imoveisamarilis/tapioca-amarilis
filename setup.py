@@ -23,6 +23,7 @@ requirements = [
     'tapioca-wrapper<2',
 ]
 test_requirements = [
+    'ipdb'
 ]
 
 
