@@ -54,11 +54,13 @@ docs:
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
 
-release: clean
-	python setup.py sdist upload
-	python setup.py bdist_wheel upload
+package_cloud:
+	/usr/local/bin/package_cloud
 
-dist: clean
+build: test
 	python setup.py sdist
 	python setup.py bdist_wheel
-	ls -l dist
+
+release: package_cloud clean build
+	package_cloud push daniellbastos/amarilis/python dist/*.whl
+	package_cloud push daniellbastos/amarilis/python dist/*.tar.gz

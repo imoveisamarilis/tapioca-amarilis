@@ -1,15 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-
-import os
-import re
-import sys
 
 try:
     import pypandoc
@@ -23,7 +17,6 @@ requirements = [
     'tapioca-wrapper<2',
 ]
 test_requirements = [
-    'ipdb'
 ]
 
 

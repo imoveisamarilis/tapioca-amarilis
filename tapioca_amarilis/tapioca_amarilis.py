@@ -15,8 +15,9 @@ class AmarilisV1ClientAdapter(JSONAdapterMixin, TapiocaAdapter):
         return params
 
     def get_api_root(self, api_params):
-        if api_params.get('debug', False):
-            return api_params.get('api_root', 'https://hlg-pms.imoveisamarilis.com.br/api/v1/')
+        custom_host = api_params.get('host', None)
+        if custom_host:
+            return custom_host
         return self.api_root
 
     def get_iterator_list(self, response_data):
